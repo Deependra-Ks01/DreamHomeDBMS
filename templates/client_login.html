@@ -18,8 +18,8 @@
             
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            
-            <button type="submit">Login</button>
+           
+            <a href="{{ url_for('client_dash') }}" class="btn">Login</a>
             <a href="{{ url_for('registration') }}" class="btn">Register</a>
         </form>
     </section>
