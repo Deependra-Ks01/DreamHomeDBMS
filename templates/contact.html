@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DreamHome</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .contact-container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+        .company-contact-info {
+            max-width: 700px;
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section class="contact-container">
+        <h2>We’d love to hear from you!</h2>
+        <p>If you have any questions or need assistance, please reach out to us using the contact form below.</p>
+
+        <form action="/submit_contact" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="company-contact-info">
+        <h2>Contact Details</h2>
+        <p>If you need immediate assistance, feel free to reach out to our team:</p>
+        
+        <h3>Meet Our Team</h3>
+        <ul>
+            <li><strong>Deependra Kumar (23bcs039)</strong> - Integration</li>
+            <li><strong>Devansh Bhardwaj (23bcs040)</strong> - Coder</li>
+            <li><strong>Dharmendra Gora (23bcs043)</strong> - Prompt Engineer</li>
+            <li><strong>Ganesh Chavhan (23bcs059)</strong> - Frontend</li>
+            <li><strong>Saksham (23bcs063)</strong> - Backend</li>
+            <li><strong>Avaneesh Rao (23bcs065)</strong> - Logo Designer</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DreamHome. All rights reserved.</p>
+    </footer>
+</body>
+</html>

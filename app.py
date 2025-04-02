@@ -30,6 +30,18 @@ def client_dash():
 def admin_dash():
     return render_template('admin_dash.html')
 
+@app.route('/services')
+def services():
+    return render_template('services.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 @app.route('/admin_login')
 def admin_login():
     return render_template('admin_login.html')
