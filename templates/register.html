@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Registration</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e6eb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            width: 60%;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+
+        .header {
+            background-color: #eac4d5;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .form-section {
+            border: 2px solid black;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #f5d6e0;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid black;
+        }
+
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .two-column div {
+            width: 48%;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            DreamHome <br> Staff Registration Form
+        </div>
+
+        <div class="form-section">
+            <label for="staffNumber">Staff Number</label>
+            <input type="text" id="staffNumber" name="staffNumber">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+
+            <div class="two-column">
+                <div>
+                    <label for="sex">Sex</label>
+                    <input type="text" id="sex" name="sex">
+                </div>
+                <div>
+                    <label for="dob">DOB</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label for="position">Position</label>
+            <input type="text" id="position" name="position">
+
+            <label for="salary">Salary</label>
+            <input type="number" id="salary" name="salary">
+        </div>
+
+        <div class="form-section">
+            <label for="branchNumber">Branch Number</label>
+            <input type="text" id="branchNumber" name="branchNumber">
+
+            <label for="branchAddress">Branch Address</label>
+            <input type="text" id="branchAddress" name="branchAddress">
+
+            <label for="phone">Telephone Number(s)</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+
+        <div class="form-section">
+            <label>Enter details where applicable</label>
+
+            <div class="two-column">
+                <div>
+                    <label for="supervisor">Supervisor Name</label>
+                    <input type="text" id="supervisor" name="supervisor">
+                </div>
+                <div>
+                    <label for="managerStartDate">Manager Start Date</label>
+                    <input type="date" id="managerStartDate" name="managerStartDate">
+                </div>
+            </div>
+
+            <label for="managerBonus">Manager Bonus</label>
+            <input type="number" id="managerBonus" name="managerBonus">
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Register</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 DreamHome. All rights reserved.
+    </div>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Registration</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e6eb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            width: 60%;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+
+        .header {
+            background-color: #eac4d5;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .form-section {
+            border: 2px solid black;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #f5d6e0;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid black;
+        }
+
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .two-column div {
+            width: 48%;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            DreamHome <br> Staff Registration Form
+        </div>
+
+        <div class="form-section">
+            <div class="two-column">
+                <div>
+                    <label for="staffNumber">Staff Number</label>
+                    <input type="text" id="staffNumber" name="staffNumber">
+                </div>
+                <div>
+                    <label for="branchNumber">Branch Number</label>
+                    <input type="text" id="branchNumber" name="branchNumber">
+                </div>
+            </div>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+
+            <div class="two-column">
+                <div>
+                    <label for="sex">Sex</label>
+                    <input type="text" id="sex" name="sex">
+                </div>
+                <div>
+                    <label for="dob">DOB</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label for="position">Position</label>
+            <input type="text" id="position" name="position">
+
+            <label for="salary">Salary</label>
+            <input type="number" id="salary" name="salary">
+        </div>
+
+        <div class="form-section">
+            <label for="branchAddress">Branch Address</label>
+            <input type="text" id="branchAddress" name="branchAddress">
+
+            <label for="phone">Telephone Number(s)</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+
+        <div class="form-section">
+            <label>Enter details where applicable</label>
+
+            <div class="two-column">
+                <div>
+                    <label for="supervisor">Supervisor Name</label>
+                    <input type="text" id="supervisor" name="supervisor">
+                </div>
+                <div>
+                    <label for="managerStartDate">Manager Start Date</label>
+                    <input type="date" id="managerStartDate" name="managerStartDate">
+                </div>
+            </div>
+
+            <label for="managerBonus">Manager Bonus</label>
+            <input type="number" id="managerBonus" name="managerBonus">
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Register</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 DreamHome. All rights reserved.
+    </div>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Registration</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Staff Registration</h1>
+    </header>
+
+    <section>
+        <div class="form-container">
+            <h2>Register</h2>
+            <form action="#" method="POST">
+              <label for="name">Staff Number:</label>
+              <input type="Number" id="SNumber" name="SNumber" required>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Sex :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dob">DOB :</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="phone">Branch Number :</label>
+                <input type="B_No" id="BrancNo" name="BranchNo" required>
+
+                <label for="password">Branch Address :</label>
+                <input type="add" id="address" name="address" required>
+
+                <label for="phone">Telephone Number(s)</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <p>Enter details where applicable</p>
+
+                <label for="name">Supervisor Name :</label>
+                <input type="text" id="Sname" name="Sname" required>
+
+                <label for="date">Manager Start Date :</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="Bonus">Manager Bonus</label>
+                <input type="Num" id="Bonus" name="Bonus" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DreamHome. All rights reserved.</p>
+    </footer>
+</body>
+</html> -->

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Website</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>DreamHome</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
+            <!-- <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+    </nav>
+    <!-- <section>
+        <h2>About Us</h2>
+        <h2>Available Properties</h2>
+        <div class="property-scroller">
+            <div class="property-card">Property 1</div>
+            <div class="property-card">Property 2</div>
+            <div class="property-card">Property 3</div>
+            <div class="property-card">Property 4</div>
+            <div class="property-card">Property 5</div>
+            <div class="property-card">Property 5</div>
+            <div class="property-card">Property 5</div>
+            <div class="property-card">Property 5</div>
+            <div class="property-card">Property 5</div>
+        </div>
+    </section> -->
+    
+    <footer>
+        <p>&copy; 2025 My Flask Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

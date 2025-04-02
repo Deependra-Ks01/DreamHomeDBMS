@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Registration</title>
+  <link rel="stylesheet" href="static/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5e6eb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      width: 60%;
+      padding: 20px;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+
+    .header {
+      background-color: #eac4d5;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .form-section {
+      border: 2px solid black;
+      margin: 10px 0;
+      padding: 15px;
+      background-color: #f5d6e0;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid black;
+    }
+
+    .two-column {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .two-column div {
+      width: 48%;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            DreamHome <br> Client Registration Form
+        </div>
+
+        <div class="form-section">
+            <label for="clientNumber">Client Number (Enter if known)</label>
+            <input type="text" id="clientNumber" name="clientNumber">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-section">
+            <label for="branchNumber">Branch Number</label>
+            <input type="text" id="branchNumber" name="branchNumber">
+
+            <label for="branchAddress">Branch Address</label>
+            <input type="text" id="branchAddress" name="branchAddress">
+
+            <label for="registeredBy">Registered By</label>
+            <input type="text" id="registeredBy" name="registeredBy">
+
+            <label for="dateRegistered">Date Registered</label>
+            <input type="date" id="dateRegistered" name="dateRegistered">
+        </div>
+
+        <div class="form-section">
+            <label>Enter property requirements</label>
+
+            <label for="propertyType">Type</label>
+            <input type="text" id="propertyType" name="propertyType">
+
+            <label for="maxRent">Max Rent</label>
+            <input type="number" id="maxRent" name="maxRent">
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Register</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 DreamHome. All rights reserved.
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Registration</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Client Registration</h1>
+  </header>
+
+  <section>
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="#" method="POST">
+          <label for="name">Client Number(Enter if known):</label>
+          <input type="Number" id="SNumber" name="SNumber" required>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="Num">Branch Number :</label>
+          <input type="B_No" id="BrancNo" name="BranchNo" required>
+
+          <label for="password">Branch Address :</label>
+          <input type="add" id="address" name="address" required>
+
+          <label for="name">Registered By :</label>
+          <input type="text" id="Sname" name="Sname" required>
+
+          <label for="date">Date Registered :</label>
+          <input type="date" id="date" name="date" required>
+
+          <p>Enter property requirements</p>
+          
+          <label for="type">Type :</label>
+          <input type="text" id="type" name="type" required>
+
+          <label for="MRNum">Max Rent</label>
+          <input type="MRNum" id="MRNum" name="MRNum" required>
+
+          <button type="submit">Register</button>
+        </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DreamHome. All rights reserved.</p>
+  </footer>
+</body>
+</html> -->

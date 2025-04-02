@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome Login</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>DreamHome</h1>
+    </header>
+    
+    <section class="login-container">
+        <h2>Select Login Type</h2>
+        <div class="buttons">
+            <a href="{{ url_for('admin_login') }}" class="btn admin">Login as Admin</a>
+            <a href="{{ url_for('client_login') }}" class="btn client">Login as Client</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DreamHome. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login - DreamHome</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-lg" style="width: 400px;">
+      <h2 class="text-center">Login</h2>
+      <form action="/login" method="POST">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" name="username" id="username" required placeholder="Enter your username">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="password" required placeholder="Enter your password">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+          <p class="mt-2">Are you a new user? <a href="/register">Sign up</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login HTML</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+  <div id="main">
+    <div id="canvas">
+      <div id="form-body">
+        <h1>Login Form</h1>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your username">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+          </div>
+          <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <p></p>Are your new user? <a href="/templates/register.html">Sign up</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> 
+</body>
+</html> --> -->
