@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome Lease Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e6eb;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            width: 70%;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        .header {
+            background-color: #eac4d5;
+            padding: 10px;
+            text-align: center;
+            font-size: 22px;
+            font-style: italic;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+
+        .header-number {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .box {
+            width: 48%;
+            padding: 15px;
+            background-color: #f5d6e0;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+
+        .box label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid black;
+            background: white;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            background-color: #d68cb3;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            DreamHome Lease
+        </div>
+        <div class="header-number">
+            Number <input type="text" id="leaseNumber" value="00345810">
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <label>Client Number</label>
+                <input type="text" id="clientNumber" value="CR74">
+                
+                <label>Full Name</label>
+                <input type="text" id="fullName" value="Mike Ritchie">
+                
+                <label>Client Signature</label>
+                <input type="text" id="signature">
+            </div>
+
+            <div class="box">
+                <label>Property Number</label>
+                <input type="text" id="propertyNumber" value="PG16">
+                
+                <label>Property Address</label>
+                <input type="text" id="propertyAddress" value="5 Novar Dr, Glasgow">
+            </div>
+
+            <div class="box">
+                <label>Monthly Rent (£)</label>
+                <input type="number" id="monthlyRent" value="450">
+                
+                <label>Payment Method</label>
+                <input type="text" id="paymentMethod" value="Cheque">
+                
+                <label>Deposit Paid (Yes/No)</label>
+                <input type="text" id="depositPaid" value="Yes">
+            </div>
+
+            <div class="box">
+                <label>Rent Start</label>
+                <input type="date" id="rentStart" value="2004-06-01">
+                
+                <label>Rent Finish</label>
+                <input type="date" id="rentFinish" value="2005-05-31">
+                
+                <label>Duration</label>
+                <input type="text" id="duration" value="1 year">
+            </div>
+        </div>
+
+        <button onclick="previewData()">Preview Lease</button>
+
+        <div class="footer">
+            Page 1
+        </div>
+    </div>
+
+    <script>
+        function previewData() {
+            alert("Lease Preview:\n" +
+                "Lease Number: " + document.getElementById("leaseNumber").value + "\n" +
+                "Client Number: " + document.getElementById("clientNumber").value + "\n" +
+                "Full Name: " + document.getElementById("fullName").value + "\n" +
+                "Property Number: " + document.getElementById("propertyNumber").value + "\n" +
+                "Property Address: " + document.getElementById("propertyAddress").value + "\n" +
+                "Monthly Rent: £" + document.getElementById("monthlyRent").value + "\n" +
+                "Payment Method: " + document.getElementById("paymentMethod").value + "\n" +
+                "Deposit Paid: " + document.getElementById("depositPaid").value + "\n" +
+                "Rent Start: " + document.getElementById("rentStart").value + "\n" +
+                "Rent Finish: " + document.getElementById("rentFinish").value + "\n" +
+                "Duration: " + document.getElementById("duration").value);
+        }
+    </script>
+
+</body>
+</html>

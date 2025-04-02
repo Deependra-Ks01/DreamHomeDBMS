@@ -22,6 +22,10 @@ def login():
 def leasing():
     return render_template('leasing.html')
 
+@app.route('/leasing_form')
+def leasing_form():
+    return render_template('leasing_form.html')
+
 @app.route('/client_dash')
 def client_dash():
     return render_template('client_dash.html')
