@@ -26,6 +26,10 @@ def leasing():
 def client_dash():
     return render_template('client_dash.html')
 
+@app.route('/admin_dash')
+def admin_dash():
+    return render_template('admin_dash.html')
+
 @app.route('/admin_login')
 def admin_login():
     return render_template('admin_login.html')
