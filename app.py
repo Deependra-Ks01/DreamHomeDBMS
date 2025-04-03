@@ -54,5 +54,21 @@ def admin_login():
 def client_login():
     return render_template('client_login.html')
 
+@app.route('/super_login')
+def super_login():
+    return render_template('super_login.html')
+
+@app.route('/super_dash')
+def super_dash():
+    return render_template('super_dash.html')
+
+@app.route('/staff_management')
+def staff_management():
+    return render_template('staff_management.html')
+
+@app.route('/property_reg')
+def property_reg():
+    return render_template('property_reg.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

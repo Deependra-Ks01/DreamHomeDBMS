@@ -1,0 +1,287 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header {
+  display: flex;
+  align-items: center; 
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  background-color: #333; 
+  color: white;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Header Hover Effect */
+header:hover {
+  background-color: #555;
+}
+
+h1 {
+  margin-left: 400px;
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Slight zoom effect on hover */
+h1:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Logo Hover Effect */
+.logo:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+nav ul {
+  list-style: none;
+  background: #444;
+  padding: 0;
+  text-align: center;
+  animation: slideDown 0.8s ease-in-out;
+}
+
+/* Navigation Slide-down effect */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Navbar Hover Effect */
+nav ul li:hover {
+  background: #666;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+/* Section Titles Animation */
+section h2 {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Property Scroller */
+.property-scroller {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 15px;
+  padding: 15px;
+  background: #ddd;
+  border-radius: 10px;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.property-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* Property Card Animation */
+.property-card {
+  min-width: 250px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.property-card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Footer Hover Effect */
+footer:hover {
+  background: #444;
+}
+
+/* Form Styling */
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  margin: 30px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Form Hover Effect */
+.form-container:hover {
+  transform: scale(1.02);
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+input:focus {
+  border: 1px solid #ff5733;
+  box-shadow: 0px 0px 8px rgba(255, 87, 51, 0.5);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background: #ff5733;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Login Page */
+.login-container {
+  margin-top: 50px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Buttons for Admin & Client */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px;
+  color: white;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.admin {
+  background-color: #ff5733;
+}
+
+.client {
+  background-color: #3498db;
+}
+
+.admin:hover {
+  background-color: #d84315;
+  transform: scale(1.05);
+}
+
+.client:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}

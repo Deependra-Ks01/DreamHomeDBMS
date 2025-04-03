@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisor Dashboard</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>DreamHome</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="{{ url_for('leasing') }}">Lease</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Welcome to Supervisor Dashboard</h2>
+
+        <div class="container">
+            <div class="header">
+                <h2><em>DreamHome</em></h2>
+                <h3>Staff Listing</h3>
+            </div>
+
+            <!-- Form to Take Input -->
+            <form action="#" method="POST">
+                <div class="info-section">
+                    <div class="box">
+                        <label for="branch_number"><strong>Branch Number:</strong></label>
+                        <input type="text" id="branch_number" name="branch_number" required>
+                    </div>
+                    <div class="box">
+                        <label for="branch_address"><strong>Branch Address:</strong></label>
+                        <input type="text" id="branch_address" name="branch_address" required>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <div class="box">
+                        <label for="telephone"><strong>Telephone Number(s):</strong></label>
+                        <input type="text" id="telephone" name="telephone" placeholder="Enter numbers separated by /" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Save Details</button>
+            </form>
+
+            <!-- Table for Staff Listing -->
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Staff Number</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                    </tr>
+                    <tr>
+                        <td><em>SG5</em></td>
+                        <td>Susan Brand</td>
+                        <td>Manager</td>
+                    </tr>
+                    <tr>
+                        <td><em>SG14</em></td>
+                        <td>David Ford</td>
+                        <td>Supervisor</td>
+                    </tr>
+                    <tr>
+                        <td><em>SG37</em></td>
+                        <td>Ann Beech</td>
+                        <td>Assistant</td>
+                    </tr>
+                    <tr>
+                        <td><em>SG112</em></td>
+                        <td>Annet Longhorn</td>
+                        <td>Supervisor</td>
+                    </tr>
+                    <tr>
+                        <td><em>SG126</em></td>
+                        <td>Chris Lawrence</td>
+                        <td>Assistant</td>
+                    </tr>
+                    <tr>
+                        <td><em>SG132</em></td>
+                        <td>Sofie Walters</td>
+                        <td>Assistant</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="footer">
+                Page 1
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Flask Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

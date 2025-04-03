@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Login</h1>
+    </header>
+
+    <section class="login-form">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <a href="{{ url_for('super_dash') }}" class="btn">Login</a>
+            <a href="{{ url_for('register') }}" class="btn" bgcolor=black>Register</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DreamHome. All rights reserved.</p>
+    </footer>
+</body>
+</html>

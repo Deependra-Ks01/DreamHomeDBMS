@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamHome Property Registration</title>
+  <link rel="stylesheet" href="static/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5e6eb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      width: 60%;
+      padding: 20px;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+
+    .header {
+      background-color: #eac4d5;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .form-section {
+      border: 2px solid black;
+      margin: 10px 0;
+      padding: 15px;
+      background-color: #f5d6e0;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid black;
+    }
+
+    .two-column {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .two-column div {
+      width: 48%;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+          <p><i>DreamHome</i></p>
+          <p>Property Registration Form</p>
+      </div>
+      
+      <div class="form-section">
+          <label for="propertyNumber">Property Number</label>
+          <input type="text" id="propertyNumber" name="propertyNumber">
+          
+          <div class="two-column">
+              <div>
+                  <label for="propertyType">Type</label>
+                  <input type="text" id="propertyType" name="propertyType">
+              </div>
+              <div>
+                  <label for="rooms">Rooms</label>
+                  <input type="number" id="rooms" name="rooms">
+              </div>
+          </div>
+          
+          <label for="rent">Rent</label>
+          <input type="number" id="rent" name="rent">
+          
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address">
+      </div>
+      
+      <div class="form-section">
+          <label for="ownerNumber">Owner Number (If known)</label>
+          <input type="text" id="ownerNumber" name="ownerNumber">
+          
+          <label for="ownerName">Person/Business Name</label>
+          <input type="text" id="ownerName" name="ownerName">
+          
+          <label for="ownerAddress">Address</label>
+          <input type="text" id="ownerAddress" name="ownerAddress">
+          
+          <label for="ownerContact">Tel No</label>
+          <input type="text" id="ownerContact" name="ownerContact">
+      </div>
+      
+      <div class="form-section">
+          <label>Enter details where applicable</label>
+          
+          <label for="businessType">Type of business</label>
+          <input type="text" id="businessType" name="businessType">
+          
+          <label for="contactName">Contact Name</label>
+          <input type="text" id="contactName" name="contactName">
+      </div>
+      
+      <div class="form-section">
+          <label for="managedBy">Managed by staff</label>
+          <input type="text" id="managedBy" name="managedBy">
+      </div>
+      
+      <div class="form-section">
+          <label for="branch">Registered at branch</label>
+          <input type="text" id="branch" name="branch">
+      </div>
+      
+      <div class="button-container">
+          <button type="submit">Register Property</button>
+      </div>
+  </div>
+
+  <footer>
+      <p>&copy; 2025 DreamHome. All rights reserved.</p>
+  </footer>
+</body>
+</html>
